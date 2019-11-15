@@ -6,7 +6,8 @@ spring:
 #开发环境配置
 spring:
   profiles: dev
-
+  application:
+    name:  microservicecloud-config-liu
 server:
   port: 1000
 
