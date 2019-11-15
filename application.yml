@@ -1,11 +1,29 @@
 spring:
-  profiles.active: -dev
+  profiles:
+    active: dev
 
 ---
+#开发环境配置
 spring:
   profiles: dev
-    application.name:  microservicecloud-config-liu-dev
+
+server:
+  port: 1000
+
+
 ---
+#测试环境配置
 spring:
-  profiles: test
-    application.name:  microservicecloud-config-liu-test
+  profiles: stg
+
+server:
+  port: 1001
+
+
+---
+#生产环境配置
+spring:
+  profiles: prd
+
+server:
+  port: 1002
