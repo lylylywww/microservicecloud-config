@@ -1,12 +1,12 @@
 spring:
-  profiles.active: -dev
+  profiles.active: dev
 
 ---
 spring:
   profiles: dev
-    application.name: microservicecloud-config-liu
+    application.name:  microservicecloud-config-liu-dev
 ---
 spring:
   profiles: test
-    application.name: microservicecloud-config-liu-test
+    application.name:  microservicecloud-config-liu-test
 ---
