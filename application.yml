@@ -4,7 +4,7 @@ spring:
 ---
 spring:
   profiles: dev
-    application.name: microservicecloud-config-liu-dev
+    application.name: microservicecloud-config-liu
 ---
 spring:
   profiles: test
