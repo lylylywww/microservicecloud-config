@@ -14,7 +14,8 @@ eureka:
     client:
       register-with-eureka: false    #false表示不向注册中心注册自己。物业公司不会向物业公司自己去注册，所以自己不向自己注册
       fetch-registry: false   #false 表示不通过eureka去获取注册信息
-      defaultZone: http://eureka-dev.com:7001/eureka/
+      service-url: 
+          defaultZone: http://eureka-dev.com:7001/eureka/
 server:
   port: 7001 #注册中心占用7001端口
 
@@ -31,6 +32,7 @@ eureka:
     client:
       register-with-eureka: false    #false表示不向注册中心注册自己。物业公司不会向物业公司自己去注册，所以自己不向自己注册
       fetch-registry: false   #false 表示不通过eureka去获取注册信息
+      service-url: 
         defaultZone: http://eureka-test.com:7001/eureka/
 server:
   port: 7001
